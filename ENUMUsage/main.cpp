@@ -10,6 +10,8 @@ private:
     int numbers[ARRAY_MAX];
 };
 
+const float A::PI = 0.0;
+
 int main(){
     std::cout << "PI: " << A::getPI() << std::endl;
     return 0;
