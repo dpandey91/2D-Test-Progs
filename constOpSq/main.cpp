@@ -9,12 +9,12 @@ public:
     }
     
     const char& operator[](int index) const{
-        std::cout << "const []" << std::endl;
+        std::cout << " const [] " << std::endl;
         return buf[index];
     }
     
     char& operator[](int index) {
-        std::cout << buf <<"non-const []" << std::endl;
+        std::cout << buf <<" non-const []" << std::endl;
         return buf[index];
     }
     
@@ -30,6 +30,6 @@ int main(){
     const string s("cat");
     string t("cat");
     t[0] = 'b';
-    std::cout << "t: " << t[0] << std::endl;
+    std::cout << "t: " << t[0] << " AND " << s[0] << std::endl;
     display(t);
 }
