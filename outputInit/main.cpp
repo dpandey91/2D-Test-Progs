@@ -20,11 +20,14 @@ public:
     student(const char* n){
         name = n;
     }
+
+//    student(const char* n) : name(n){}
     
 private:
     string name;
 };
 
 int main(){
-    student s("Dipika");
+    student* s = new student("Dipika");
+    delete s;
 }
